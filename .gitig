@@ -1,0 +1,4 @@
+dist
+node_modules
+.gitig.swp
+package-lock.json
