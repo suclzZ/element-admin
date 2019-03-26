@@ -29,8 +29,8 @@
 				<!-- <el-table-column prop="weixin" label="微信 "></el-table-column> -->
 				<el-table-column label="操作" width="140">
 				<template scope="scope">
-					<el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-					<el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
+					<el-button size="mini" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i></el-button>
+					<el-button type="danger" size="mini" @click="handleDel(scope.$index, scope.row)"><i class="el-icon-delete"></i></el-button>
 				</template>
 			</el-table-column>
 			</el-table>
@@ -321,7 +321,7 @@
 				});
 				// para.ids = ids;
 				this.$confirm('确认删除该批数据？', '提示', {}).then(() => {
-					this.$http.delete('user',{params:{ids:ids}}).then(res=>{
+					this.$http.delete('user',{params:{ids:ids}}).then(res=>{//delete data传不进值
 						this.$message({
 							message: '删除成功',
 							type: 'success'

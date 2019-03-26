@@ -13,7 +13,8 @@ import routes from './routes'
 import Mock from './mock'
 Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
-//
+import './element-variables.scss'
+//my
 import http from './Http'
 
 // import axios from 'axios';
