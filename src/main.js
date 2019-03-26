@@ -13,6 +13,12 @@ import routes from './routes'
 import Mock from './mock'
 Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
+//
+import http from './Http'
+
+// import axios from 'axios';
+
+Vue.prototype.$http = http;
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
