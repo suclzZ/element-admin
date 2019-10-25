@@ -2,6 +2,8 @@
 
 # To start
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/suspring/element-admin.svg)](https://greenkeeper.io/)
+
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli)
 
 ``` bash
